@@ -122,6 +122,28 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &47042854 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1407631716526596528, guid: 4b8098422c74993469b39ef683f8b9ea, type: 3}
+  m_PrefabInstance: {fileID: 7137305448887534688}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &47042855
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 47042854}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9beb9cd36cbe64448a332ff93eb3b5c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveSpeed: 5
+  paddingLeft: 0.5
+  paddingRight: 0.5
+  paddingTop: 0.5
+  paddingBottom: 2
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -931,21 +953,9 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4132661570419274803, guid: b29879ae905d6b547975efb4d9441bd7, type: 3}
-      propertyPath: m_SortingLayer
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 4132661570419274803, guid: b29879ae905d6b547975efb4d9441bd7, type: 3}
-      propertyPath: m_SortingLayerID
-      value: -1813794469
-      objectReference: {fileID: 0}
     - target: {fileID: 8558930758433388402, guid: b29879ae905d6b547975efb4d9441bd7, type: 3}
       propertyPath: m_Name
       value: ' Enemy 0'
-      objectReference: {fileID: 0}
-    - target: {fileID: 8558930758433388402, guid: b29879ae905d6b547975efb4d9441bd7, type: 3}
-      propertyPath: m_TagString
-      value: Player
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1004,22 +1014,13 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
-    - target: {fileID: 1407631716526596528, guid: 4b8098422c74993469b39ef683f8b9ea, type: 3}
-      propertyPath: m_TagString
-      value: Player
-      objectReference: {fileID: 0}
-    - target: {fileID: 8051161088276164028, guid: 4b8098422c74993469b39ef683f8b9ea, type: 3}
-      propertyPath: m_SortingLayer
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 8051161088276164028, guid: 4b8098422c74993469b39ef683f8b9ea, type: 3}
-      propertyPath: m_SortingLayerID
-      value: -1813794469
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1407631716526596528, guid: 4b8098422c74993469b39ef683f8b9ea, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 47042855}
   m_SourcePrefab: {fileID: 100100000, guid: 4b8098422c74993469b39ef683f8b9ea, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:

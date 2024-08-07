@@ -142,7 +142,7 @@ MonoBehaviour:
   moveSpeed: 5
   paddingLeft: 0.5
   paddingRight: 0.5
-  paddingTop: 0.5
+  paddingTop: 5
   paddingBottom: 2
 --- !u!1 &519420028
 GameObject:

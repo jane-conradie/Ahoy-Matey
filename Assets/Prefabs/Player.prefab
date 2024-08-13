@@ -196,6 +196,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 50
   shipDamagedEffect: {fileID: 6890414445578081968, guid: 3876c6ac0e0ab7041971bfa3ce822550, type: 3}
+  applyCameraShake: 1
 --- !u!114 &4518695301782807830
 MonoBehaviour:
   m_ObjectHideFlags: 0

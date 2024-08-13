@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 1909670587951009405}
   - component: {fileID: -4105155457115803080}
   - component: {fileID: 4518695301782807830}
+  - component: {fileID: 2580796467125797665}
   m_Layer: 3
   m_Name: Player
   m_TagString: Player
@@ -194,6 +195,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 50
+  shipDamagedEffect: {fileID: 6890414445578081968, guid: 3876c6ac0e0ab7041971bfa3ce822550, type: 3}
 --- !u!114 &4518695301782807830
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -209,5 +211,25 @@ MonoBehaviour:
   projectilePrefab: {fileID: 4710791364380910608, guid: cc891beec1f839540b9183a1a2691e65, type: 3}
   projectileSpeed: 10
   projectileLifetime: 5
-  firingRate: 0.2
+  baseFiringRate: 0.2
+  firingRateVariant: 0
+  minimumFiringRate: 0.1
+  useAI: 0
   isFiring: 0
+--- !u!114 &2580796467125797665
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1407631716526596528}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9beb9cd36cbe64448a332ff93eb3b5c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveSpeed: 5
+  paddingLeft: 0.5
+  paddingRight: 0.5
+  paddingTop: 5
+  paddingBottom: 2

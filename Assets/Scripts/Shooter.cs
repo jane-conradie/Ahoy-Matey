@@ -19,6 +19,13 @@ public class Shooter : MonoBehaviour
 
     Coroutine firingCoroutine;
 
+    AudioPlayer audioPlayer;
+
+    void Awake()
+    {
+        audioPlayer = FindObjectOfType<AudioPlayer>();
+    }
+
     void Start()
     {
         if (useAI)
@@ -49,7 +56,6 @@ public class Shooter : MonoBehaviour
     {
         while (true)
         {
-            Debug.Log("player shoot projectile");
             GameObject instance = Instantiate(projectilePrefab, 
                                                 transform.position, 
                                                 quaternion.identity);
@@ -66,6 +72,8 @@ public class Shooter : MonoBehaviour
                                                     baseFiringRate + firingRateVariant);
 
             timeToNextProjectile = Mathf.Clamp(timeToNextProjectile, minimumFiringRate, float.MaxValue);
+
+            audioPlayer.PlayShootingClip();
 
             yield return new WaitForSeconds(timeToNextProjectile);
         }

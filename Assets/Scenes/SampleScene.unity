@@ -393,6 +393,54 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 1337565841}
   m_SourcePrefab: {fileID: 100100000, guid: 1869926c659f2494c9f37598722e0665, type: 3}
+--- !u!1 &555012183
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 555012185}
+  - component: {fileID: 555012184}
+  m_Layer: 0
+  m_Name: AudioPlayer
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &555012184
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 555012183}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 795ace3c0443cac49bf7f6a050b9da50, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  shootingClip: {fileID: 8300000, guid: fdb3ad497af0e1b43bf1e9094f4ae740, type: 3}
+  shootingVolume: 0.41
+  damageClip: {fileID: 8300000, guid: 78eca7b6e2c28414aa3b9a2ca2bd6c58, type: 3}
+  damageVolume: 0.497
+--- !u!4 &555012185
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 555012183}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1337565837 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7789908812623987947, guid: 1869926c659f2494c9f37598722e0665, type: 3}
@@ -498,3 +546,4 @@ SceneRoots:
   - {fileID: 7137305448887534688}
   - {fileID: 212141177}
   - {fileID: 531906675}
+  - {fileID: 555012185}

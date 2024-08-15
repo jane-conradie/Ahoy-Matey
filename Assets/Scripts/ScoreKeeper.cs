@@ -1,6 +1,6 @@
 using System;
-using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class ScoreKeeper : MonoBehaviour
 {
@@ -8,6 +8,27 @@ public class ScoreKeeper : MonoBehaviour
     [SerializeField] int deathScore = 50;
     
     int score = 0;
+
+    static ScoreKeeper instance;
+    
+    void Awake()
+    {
+        ManageSingleton();
+    }
+
+    void ManageSingleton()
+    {
+        if (instance != null)
+        {
+            gameObject.SetActive(false);
+            Destroy(gameObject);
+        }
+        else
+        {
+            instance = this;
+            DontDestroyOnLoad(gameObject);
+        }
+    }
  
     public void ModifyScore(int health, bool isPlayer)
     {

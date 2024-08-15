@@ -56,6 +56,7 @@ GameObject:
   - component: {fileID: 7740923670176880283}
   - component: {fileID: 3235229506790937971}
   - component: {fileID: 7928081705893907867}
+  - component: {fileID: 5256261216084816744}
   m_Layer: 6
   m_Name: Background Tilemap
   m_TagString: Untagged
@@ -72,7 +73,7 @@ Transform:
   m_GameObject: {fileID: 7789908812623987947}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -0.71, y: -1.72, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -669,3 +670,15 @@ TilemapRenderer:
   m_Mode: 0
   m_DetectChunkCullingBounds: 0
   m_MaskInteraction: 0
+--- !u!114 &5256261216084816744
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7789908812623987947}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1edb8ac53a928fb479b65807dce1979f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

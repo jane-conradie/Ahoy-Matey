@@ -194,6 +194,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eaa20cf93bb4bca41ad12ef978c8787f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isPlayer: 1
   health: 50
   shipDamagedEffect: {fileID: 6890414445578081968, guid: 3876c6ac0e0ab7041971bfa3ce822550, type: 3}
   applyCameraShake: 1

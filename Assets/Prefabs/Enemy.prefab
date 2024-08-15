@@ -18,7 +18,7 @@ GameObject:
   - component: {fileID: 6468714732450161968}
   m_Layer: 7
   m_Name: Enemy
-  m_TagString: Player
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -178,6 +178,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 50
   shipDamagedEffect: {fileID: 6890414445578081968, guid: 3876c6ac0e0ab7041971bfa3ce822550, type: 3}
+  applyCameraShake: 0
 --- !u!114 &7800632448923109733
 MonoBehaviour:
   m_ObjectHideFlags: 0

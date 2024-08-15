@@ -3,6 +3,7 @@ using UnityEngine;
 
 public class Health : MonoBehaviour
 {
+    [SerializeField] bool isPlayer;
     [SerializeField] int health = 50;
     [SerializeField] ParticleSystem shipDamagedEffect;
 
@@ -11,10 +12,13 @@ public class Health : MonoBehaviour
 
     AudioPlayer audioPlayer;
 
+    ScoreKeeper scoreKeeper;
+
     void Awake()
     {
         cameraShake = Camera.main.GetComponent<CameraShake>();
         audioPlayer = FindObjectOfType<AudioPlayer>();
+        scoreKeeper = FindObjectOfType<ScoreKeeper>();
     }
 
     void OnTriggerEnter2D(Collider2D other) 
@@ -35,10 +39,18 @@ public class Health : MonoBehaviour
     void TakeDamage(int damage)
     {
         health -= damage;
+        
         if (health <= 0)
         {
-            Destroy(gameObject);
+            Die();
         }
+
+        scoreKeeper.ModifyScore(health, isPlayer);
+    }
+
+    void Die()
+    {
+        Destroy(gameObject);
     }
 
     void PlayHitEffect()
@@ -46,7 +58,7 @@ public class Health : MonoBehaviour
         if (shipDamagedEffect != null)
         {
             ParticleSystem instance = Instantiate(shipDamagedEffect, transform.position, Quaternion.identity);
-            Debug.Log(transform.position);
+
             Destroy(instance.gameObject, instance.main.duration + instance.main.startLifetime.constantMax);
         }
     }
@@ -57,5 +69,10 @@ public class Health : MonoBehaviour
         {
            cameraShake.Play();
         }
+    }
+
+    public int GetHealth()
+    {
+        return health;
     }
 }

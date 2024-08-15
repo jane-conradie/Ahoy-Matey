@@ -32,8 +32,17 @@ public class LevelManager : MonoBehaviour
 
     public void QuitGame()
     {
-        Debug.Log("Quitting game");
+        #if UNITY_STANDALONE_WIN
+
         Application.Quit();
+
+        #endif
+
+        #if UNITY_WEBGL
+
+        Application.OpenURL("https://www.linkedin.com/in/jan%C3%A9-conradie-46687b186/");
+
+        #endif
     }
 
     IEnumerator WaitAndLoad(string sceneName, float delay)

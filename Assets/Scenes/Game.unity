@@ -381,6 +381,30 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7090785060515267619, guid: 48f4e7635bb602c45b67f271ecf140ef, type: 3}
+      propertyPath: timeBetweenWaves
+      value: 2.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7090785060515267619, guid: 48f4e7635bb602c45b67f271ecf140ef, type: 3}
+      propertyPath: waveConfigs.Array.size
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7090785060515267619, guid: 48f4e7635bb602c45b67f271ecf140ef, type: 3}
+      propertyPath: waveConfigs.Array.data[2]
+      value: 
+      objectReference: {fileID: 11400000, guid: d69fb5117d61db9479e77b1bc02661fe, type: 2}
+    - target: {fileID: 7090785060515267619, guid: 48f4e7635bb602c45b67f271ecf140ef, type: 3}
+      propertyPath: waveConfigs.Array.data[3]
+      value: 
+      objectReference: {fileID: 11400000, guid: ae8518b6e57456541a5e808d0873e437, type: 2}
+    - target: {fileID: 7090785060515267619, guid: 48f4e7635bb602c45b67f271ecf140ef, type: 3}
+      propertyPath: waveConfigs.Array.data[4]
+      value: 
+      objectReference: {fileID: 11400000, guid: 379cedb4f29f0c64db194e12a84c89ec, type: 2}
+    - target: {fileID: 7090785060515267619, guid: 48f4e7635bb602c45b67f271ecf140ef, type: 3}
+      propertyPath: waveConfigs.Array.data[5]
+      value: 
+      objectReference: {fileID: 11400000, guid: 4b4a932a1c811f14c865c4ff6c76a379, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
